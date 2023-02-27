@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let temperature = 0;
+
+    if(temperature <=0){
+      console.dir('물이 업니다.');
+    }
+
+    function checkHeight(height){
+      let limit = 140;
+
+      if(height <=limit){
+        console.dir('탑승이 불가능합니다.')
+      }else{
+        console.dir('탑승이 가능합니다.');
+      }
+
+    }
+
+    checkHeight(150);
+    checkHeight(130);
+    checkHeight(160);
+
+
+
+function prinGrade(mid,final){
+
+  let total = mid + final
+  
+  if(total <=90){
+    console.dir('A')
+  }else if(total <=80){
+    console.dir('B')
+  }else if(total <=70){
+    console.dir('C')
+  }else if(total <=60){
+    console.dir('D')
+  }else{
+    console.dir('F')
+  }
+}
+
+prinGrade(50,50);
+prinGrade(40,10);
+
+ // 나의 나이와 성별 
+ let myAge =26;
+ let myGender= 'man';
+
+ // 내가 부르게 될 호칭
+ let callOrderBrother = '형';
+ let callOrderSister ='누나';
+ let callFriend = '친구';
+ let callYoungerBrother='남동생';
+ let callYoungerSister='여동생';
+
+function whatShouldICallYou(yourAge,yourGender){
+ 
+
+  if(myAge === yourAge){
+    return '친구';
+
+  }else if(myAge > yourAge){
+    if(myGender === yourGender)
+    return callYoungerBrother;
+  }else if( yourGender == 'woman'){
+    return callYoungerSister;
+  }
+
+  else {
+if(myGender === yourGender){
+  return callOrderBrother;
+}else if(yourGender != myGender){
+  return callOrderSister;
+}
+} 
+ 
+}
+
+  let result1= whatShouldICallYou(27,'man');
+  console.dir(result1);
+
+  let result3= whatShouldICallYou(24,'man');
+  console.dir(result3);
+
+  let result2= whatShouldICallYou(24,'woman');
+  console.dir(result2);
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+   function presentMeeing(name){
+    console.dir(`${name}(이)가 대화에 참여했습니다.`)
+   }
+
+   presentMeeing('joy');
+   presentMeeing('joe');
+   presentMeeing('jim');
+   presentMeeing('ann');
+   
+
+   function double(x,y){
+    console.dir(`${x}*${y}는 ${x*y}`);
+   }
+
+   double(3,4);
+   double(3,2);
+   double(7,5);
+   double(8,9);
+   double(5,5);
+   double(9,9);
+
+   // 함수 안에 return문이 선언되어있으면, console.dir(함수(값))으로 호출 
+   function calculateRectangleArea(width, height){
+    return width * height;
+   }
+
+   console.dir(calculateRectangleArea(3,4));
+   console.dir(calculateRectangleArea(5,8));
+   console.dir(calculateRectangleArea(2,7));
+
+
+   // 함수 안에 console.dir이 있으면, 함수(값)으로 호출 
+function orderSetMenu(sandwich, drink='스프라이트'){
+  console.dir(`주문하신 ${sandwich}, ${drink} 세트메뉴 나왔습니다.`);
+}
+
+ orderSetMenu('햄치즈 샌드위치');
+ orderSetMenu('아보카도 샌드위치', '밀크티');
+ orderSetMenu('계란듬뿍 샌드위치', '딸기쥬스');
+
+ let adultTag = '삑';
+ let teenagerTag = '삑삑';
+ let errorTag = '삑삑삑';
+ let transferTag='환승입니댜.';
+
+ function tagNotificaion(tagcase){
+  console.dir(tagcase);
+ }
+
+ tagNotificaion(adultTag);
+ tagNotificaion(teenagerTag);
+ tagNotificaion(errorTag);
+ tagNotificaion(transferTag);
+ tagNotificaion(adultTag);
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+     </script>
+  
+</body>
+</html>
